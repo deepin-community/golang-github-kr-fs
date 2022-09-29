@@ -1,0 +1,46 @@
+golang-github-kr-fs (0.1.0-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+    Fixes: lintian: package-uses-old-debhelper-compat-version
+  * Set debhelper-compat version in Build-Depends.
+    Fixes: lintian: uses-debhelper-compat-file
+  * Change priority extra to priority optional.
+    Fixes: lintian: priority-extra-is-replaced-by-priority-optional
+  * Set upstream metadata fields: Bug-Database, Bug-Submit.
+    Fixes: lintian: upstream-metadata-file-is-missing
+
+  [ Anthony Fok ]
+  * New upstream version 0.1.0
+  * Add debian/watch
+  * debian/gbp.conf: Set debian-branch to debian/sid for DEP-14 conformance
+  * Apply "cme fix dpkg" fixes:
+    - Organize debian/control fields
+    - Bump Standards-Version to 4.5.0 (no change)
+    - Add Testsuite: autopkgtest-pkg-go
+  * Update Maintainer email address to team+pkg-go@tracker.debian.org
+  * Bump debhelper dependency to "Build-Depends: debhelper-compat (= 13)"
+  * Add "Rules-Requires-Root: no" to debian/control
+
+ -- Anthony Fok <foka@debian.org>  Fri, 23 Oct 2020 02:41:26 -0600
+
+golang-github-kr-fs (0.0~git20131111.0.2788f0d-2) unstable; urgency=medium
+
+  [ Paul Tagliamonte ]
+  * Team upload.
+  * Use a secure transport for the Vcs-Git and Vcs-Browser URL
+
+  [ Anthony Fok ]
+  * Use golang-any to simplify Build-Depends.
+    Also bump Standards-Version to 3.9.8 (no change)
+
+ -- Anthony Fok <foka@debian.org>  Thu, 29 Dec 2016 02:23:41 -0700
+
+golang-github-kr-fs (0.0~git20131111.0.2788f0d-1) unstable; urgency=medium
+
+  * Initial release (Closes: #810974)
+
+ -- Anthony Fok <foka@debian.org>  Thu, 14 Jan 2016 10:07:59 -0700

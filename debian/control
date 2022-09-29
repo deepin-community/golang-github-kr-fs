@@ -1,0 +1,24 @@
+Source: golang-github-kr-fs
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Anthony Fok <foka@debian.org>
+Section: devel
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-kr-fs
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-kr-fs.git
+Homepage: https://github.com/kr/fs
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/kr/fs
+
+Package: golang-github-kr-fs-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Provides filesystem-related functions for Go
+ Package fs provides filesystem-related functions, especially Walker
+ which provides a convenient interface for iterating over the descendants
+ of a filesystem path, for the Go Programming Language.
